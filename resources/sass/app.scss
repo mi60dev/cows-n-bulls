@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    font-family: 'Nunito';
+}
+
+@import 'node_modules/tailwindcss/base';
+@import 'node_modules/tailwindcss/components';
+@import 'node_modules/tailwindcss/utilities';
