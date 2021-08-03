@@ -67,7 +67,7 @@ class GameController extends Controller
     {
         $num = $this->createNumber();
         $game = auth()->user()->games()->create([ 'number' => $num ]);
-        return response()->json($num, 200);
+        return response()->json((bool)$num, 200);
     }
 
     public function getHighScores()
