@@ -1,8 +1,9 @@
 <template>
   <div>
     <navigation></navigation>
-    <div class="container shadow rounded bg-secondary-100 px-8 py-6 my-4 w-full md:max-w-3xl mx-auto pt-10 pb-20 mb-20">
+    <div class="container shadow rounded bg-light-100 px-8 py-6 my-4 w-full md:max-w-3xl mx-auto pt-10 pb-20 mb-20">
       <div class="text-xl text-gray-800 leading-normal p-5">
+        <div class="text-lg" v-if="list.length==0">No results yet.</div>
         <ol class="list-decimal pl-6">
           <li class="mb-4" v-for="(item, i) in list" :key="i">
             {{ item.user.username }} | 

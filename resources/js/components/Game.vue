@@ -70,6 +70,10 @@ export default {
       .then(res => {
         this.num = res.data;
       })
+      .catch(err => {
+        localStorage.removeItem('user');
+        this.$router.push('login')
+      })
     },
     setValue(i, val) {
       this.$set(this.numbers, i, Boolean( val ) ? Number( val ) : null);

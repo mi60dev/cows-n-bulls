@@ -18,5 +18,15 @@ npm run dev
 ```
 ### Step 4
 ```
+php artisan key:generate
+```
+### Step 5
+```
 php artisan migrate
+```
+### Steo 6
+```
+cp .env.example .env
+--> Setup DB
+--> Set APP_URL in .env (used for the sanctum auth)
 ```
