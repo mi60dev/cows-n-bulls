@@ -24,7 +24,7 @@ php artisan key:generate
 ```
 php artisan migrate
 ```
-### Steo 6
+### Step 6
 ```
 cp .env.example .env
 --> Setup DB
